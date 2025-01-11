@@ -21,7 +21,7 @@ const Cryptochart = ({ currency, price_in_inr }) => {
   };
 
   return (
-    <div className="h-[81vh] w-[70%] bg-white rounded-[8px] p-[20px] flex flex-col space-y-5">
+    <div className="h-[81vh] w-full bg-white rounded-[8px] p-[20px] flex flex-col space-y-5">
       <div className="flex flex-col justify-start items-start space-y-12">
         <div className="flex justify-start items-center space-x-10">
           <div className="flex justify-start items-center space-x-3">
