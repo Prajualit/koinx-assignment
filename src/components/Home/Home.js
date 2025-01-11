@@ -5,8 +5,8 @@ import Navbar from "./Navbar";
 import Image from "next/image";
 import getstarted from "@/assets/getstarted.png";
 import arrow from "@/assets/arrow.png";
-import increase from "@/assets/increase.png";
 import Cryptochart from "./Cryptochart";
+import Trendingcoins from "./Trendingcoins";
 
 const fetchCurrencyData = async (currency) => {
   const response = await fetch(
@@ -79,34 +79,7 @@ const Home = () => {
               <Image width={20} height={20} src={arrow} alt="Arrow icon" />
             </button>
           </div>
-          <div className="bg-white h-[auto] rounded-[8px] p-6 flex flex-col space-y-6">
-            <h1 className="font-[600] text-[24px] leading-[28.8px]">{`Trending Coins (24h)`}</h1>
-            {data.slice(0, 3).map((currency) => (
-              <div key={currency.id} className="flex justify-between">
-                <div className="flex space-x-2 items-center justify-start font-[500] text-[16px] leading-[24px]">
-                  <Image
-                    width={24}
-                    height={24}
-                    src={currency.image}
-                    alt={currency.name}
-                  />
-                  <span>{currency.name}</span>
-                </div>
-                <div className="bg-[#EBF9F4] text-[#14B079] leading-[19.36px] w-[84px] px-2 py-1 rounded-[8px] text-center flex justify-between items-center">
-                  <Image
-                    className="h-[8px]"
-                    width={11}
-                    height={2}
-                    src={increase}
-                    alt="Increase"
-                  />
-                  <span>
-                    {`${currency.price_change_percentage_24h.toFixed(2)}%`}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Trendingcoins />
         </div>
       </div>
     </div>
