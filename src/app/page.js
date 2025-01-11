@@ -6,6 +6,7 @@ import Performance from "@/components/Performance/Performance";
 import Sentiment from "@/components/Sentiment/Sentiment";
 import Aboutbitcoin from "@/components/Aboutbitcoin/Aboutbitcoin";
 import Tokenomics from "@/components/Tokenomics/Tokenomics";
+import Team from "@/components/Team/Team";
 
 export default function Page() {
   const interRegular = {
@@ -25,6 +26,7 @@ export default function Page() {
         <Sentiment />
         <Aboutbitcoin />
         <Tokenomics />
+        <Team />
         <Youmayalsolike />
       </div>
     </TrendingCoinsProvider>
