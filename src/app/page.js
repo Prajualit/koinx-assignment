@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Home from "@/components/Home/Home";
 import Youmayalsolike from "@/components/Youmayalsolike/Youmayalsolike";
+import { TrendingCoinsProvider } from "@/context/TrendingCoinsContext";
 
 export default function Page() {
-
   const interRegular = {
     fontFamily: "Inter",
     fontStyle: "normal",
@@ -14,9 +14,11 @@ export default function Page() {
   };
 
   return (
-    <div className={`${interRegular.className}`}>
-      <Home />
-      <Youmayalsolike />
-    </div>
+    <TrendingCoinsProvider>
+      <div className={`${interRegular.className}`}>
+        <Home />
+        <Youmayalsolike />
+      </div>
+    </TrendingCoinsProvider>
   );
 }

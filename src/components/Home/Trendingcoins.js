@@ -37,7 +37,7 @@ const Trendingcoins = () => {
         <div key={currency.item.id} className="flex justify-between">
           <div className="flex space-x-2 items-center justify-start font-[500] text-[16px] leading-[24px]">
             <Image
-            className="rounded-full"
+              className="rounded-full"
               width={24}
               height={24}
               src={currency.item.thumb}
@@ -53,7 +53,9 @@ const Trendingcoins = () => {
               src={increase}
               alt="Increase"
             />
-            <span className="text-[14px]">{`${currency.item.data.price_change_percentage_24h.aed.toFixed(2)}%`}</span>
+            <span className="text-[14px]">{`${currency.item.data.price_change_percentage_24h.aed.toFixed(
+              2
+            )}%`}</span>
           </div>
         </div>
       ))}
