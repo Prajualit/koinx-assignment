@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Home from "@/components/Home/Home";
+import Youmayalsolike from "@/components/Youmayalsolike/Youmayalsolike";
 
 export default function Page() {
 
@@ -15,7 +16,7 @@ export default function Page() {
   return (
     <div className={`${interRegular.className}`}>
       <Home />
-
+      <Youmayalsolike />
     </div>
   );
 }
