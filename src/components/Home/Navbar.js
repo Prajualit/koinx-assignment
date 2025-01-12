@@ -21,7 +21,7 @@ const Navbar = () => {
           Get Started
         </button>
       </div>
-      <button>
+      <button className="lg:hidden">
         <Image className="w-[50px] h-[50px] " src={navbar} alt="" />
       </button>
     </div>
