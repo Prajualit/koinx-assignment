@@ -5,8 +5,8 @@ import aboutbitcoin2 from "@/assets/aboutbitcoin2.png";
 
 const Aboutbitcoin = () => {
   return (
-    <div className="px-12 pr-[68px] pb-12">
-      <div className=" w-[70%] bg-white rounded-[8px] p-[24px] px-[28px] flex flex-col space-y-12">
+    <div className="sm:px-12 px-3 xl:pr-[68px] pb-12">
+      <div className=" w-full xl:w-[70%] bg-white rounded-[8px] p-[24px] px-[28px] flex flex-col space-y-12">
         <div className="flex flex-col space-y-6 items-start">
           <h1 className="text-[24px] font-[600] leading-[28.8px]">
             About Bitcoin
@@ -59,7 +59,7 @@ const Aboutbitcoin = () => {
           <h1 className="text-[24px] font-[600] leading-[28.8px]">
             Already Holding Bitcoin?
           </h1>
-          <div className="flex space-x-5 ">
+          <div className="flex space-x-5 max-lg:flex-col max-lg:space-x-0 max-lg:space-y-5">
             <Image
               className="w-[403px] h-[151px] cursor-pointer "
               src={aboutbitcoin1}

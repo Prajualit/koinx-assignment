@@ -4,8 +4,8 @@ import tokenomics from "@/assets/tokenomics.png";
 
 const Tokenomics = () => {
   return (
-    <div className="px-12 pr-[68px] pb-12">
-      <div className=" w-[70%] bg-white rounded-[8px] p-[24px] px-[28px] flex flex-col space-y-12">
+    <div className="sm:px-12 px-3 xl:pr-[68px] pb-12">
+      <div className=" w-full xl:w-[70%] bg-white rounded-[8px] p-[24px] px-[28px] flex flex-col space-y-12">
         <div className="flex flex-col space-y-2 items-start">
           <div className="flex flex-col space-y-6">
             <h1 className="text-[24px] font-[600] leading-[28.8px]">

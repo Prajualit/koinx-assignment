@@ -45,8 +45,8 @@ const Performance = () => {
   };
 
   return (
-    <div className="px-12 pr-[68px] pt-3 pb-12">
-      <div className="h-[81vh] w-[70%] bg-white rounded-[8px] p-[20px] flex flex-col space-y-5">
+    <div className="sm:px-12 px-3 xl:pr-[68px] pt-3 pb-12">
+      <div className="w-full xl:w-[70%] bg-white rounded-[8px] p-[20px] flex flex-col space-y-5">
         <h1 className="text-[24px] font-[600] leading-[28.8px]">Performance</h1>
         {data.slice(0, 1).map((currency) => (
           <div key={currency.id} className="flex flex-col space-y-10">
@@ -61,7 +61,7 @@ const Performance = () => {
                   </span>
                 </div>
                 <Image
-                  className="w-[582.8px] h-[4.63px]"
+                  className="sm:w-[50vw] w-[30vw] h-[4.63px]"
                   src={performance}
                   alt=""
                 />
@@ -84,7 +84,7 @@ const Performance = () => {
                   </span>
                 </div>
                 <Image
-                  className="w-[582.8px] h-[4.63px]"
+                  className="sm:w-[50vw] w-[30vw] h-[4.63px]"
                   src={performance}
                   alt=""
                 />
@@ -102,7 +102,7 @@ const Performance = () => {
               <h1 className="text-[18.91px] font-[600] leading-[20px]">
                 Fundamentals
               </h1>
-              <div className="flex items-center space-x-10">
+              <div className="flex max-sm:flex-col max-sm:justify-center items-center space-y-2 sm:space-x-10">
                 <div className="flex flex-col space-y-2 w-full">
                   <div className="flex justify-between border-b-[1px] border-[#DEE1E6] py-4 pb-6 ">
                     <span className="font-[500] text-[14px] leading-[20px] text-[#768396] ">

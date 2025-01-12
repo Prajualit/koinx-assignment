@@ -55,8 +55,8 @@ const Home = () => {
   return (
     <div className="flex flex-col space-y-10 ">
       <Navbar />
-      <div className="flex items-start space-x-5 px-12">
-        <div className="flex flex-col justify-center items-center w-[70%] space-y-8">
+      <div className="flex items-start space-x-5 sm:px-12 px-3">
+        <div className="flex flex-col justify-center items-center w-full xl:w-[70%] space-y-8">
           {data.slice(0, 1).map((currency) => (
             <Cryptochart
               key={currency.id}
@@ -68,13 +68,13 @@ const Home = () => {
             <button className="text-[#0141CF] font-[600] text-[16px] leading-[19.36px] border-b-[3px] border-[#0141CF] pb-3  ">Overview</button>
             <button className="text-[#3E424A] font-[500] text-[16px] leading-[19.36px] pb-3 ">Fundamentals</button>
             <button className="text-[#3E424A] font-[500] text-[16px] leading-[19.36px] pb-3 ">News Insights</button>
-            <button className="text-[#3E424A] font-[500] text-[16px] leading-[19.36px] pb-3 ">Sentiments</button>
-            <button className="text-[#3E424A] font-[500] text-[16px] leading-[19.36px] pb-3 ">Team</button>
-            <button className="text-[#3E424A] font-[500] text-[16px] leading-[19.36px] pb-3 ">Technicals</button>
-            <button className="text-[#3E424A] font-[500] text-[16px] leading-[19.36px] pb-3 ">Tokenomics</button>
+            <button className="text-[#3E424A] flex max-sm:hidden font-[500] text-[16px] leading-[19.36px] pb-3 ">Sentiments</button>
+            <button className="text-[#3E424A] flex max-sm:hidden font-[500] text-[16px] leading-[19.36px] pb-3 ">Team</button>
+            <button className="text-[#3E424A] flex max-lg:hidden font-[500] text-[16px] leading-[19.36px] pb-3 ">Technicals</button>
+            <button className="text-[#3E424A] flex max-lg:hidden font-[500] text-[16px] leading-[19.36px] pb-3 ">Tokenomics</button>
           </div>
         </div>
-        <div className="flex flex-col w-[30%] space-y-5">
+        <div className="flex max-lg:hidden flex-col w-[30%] space-y-5">
           <div className="h-auto text-white rounded-[8px] bg-[#0052FE] p-10 flex flex-col justify-start items-center space-y-5">
             <h1 className="font-[700] text-[24px] leading-[40p] text-center">
               Get Started with KoinX for FREE
