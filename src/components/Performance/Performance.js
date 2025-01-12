@@ -45,7 +45,7 @@ const Performance = () => {
   };
 
   return (
-    <div className="sm:px-12 px-3 xl:pr-[68px] pt-3 pb-12">
+    <div className="sm:px-12 px-3 xl:pr-[68px] pt-3 sm:pb-12 pb-3">
       <div className="w-full xl:w-[70%] bg-white rounded-[8px] p-[20px] flex flex-col space-y-5">
         <h1 className="text-[24px] font-[600] leading-[28.8px]">Performance</h1>
         {data.slice(0, 1).map((currency) => (

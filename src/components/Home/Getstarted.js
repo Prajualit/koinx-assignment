@@ -8,7 +8,7 @@ import Trendingcoins from "./Trendingcoins";
 
 const Getstarted = () => {
   return (
-    <div className="hidden sm:px-12 px-3 py-12 max-lg:flex flex-col w-full space-y-5">
+    <div className="hidden sm:px-12 px-3 sm:py-12 py-3 max-lg:flex flex-col w-full space-y-5">
       <div className="h-auto text-white rounded-[8px] bg-[#0052FE] p-10 flex flex-col justify-start items-center space-y-5">
         <h1 className="font-[700] text-[24px] leading-[40p] text-center">
           Get Started with KoinX for FREE

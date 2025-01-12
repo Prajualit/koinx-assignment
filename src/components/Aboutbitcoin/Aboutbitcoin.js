@@ -5,7 +5,7 @@ import aboutbitcoin2 from "@/assets/aboutbitcoin2.png";
 
 const Aboutbitcoin = () => {
   return (
-    <div className="sm:px-12 px-3 xl:pr-[68px] pb-12">
+    <div className="sm:px-12 px-3 xl:pr-[68px] sm:pb-12 pb-3">
       <div className=" w-full xl:w-[70%] bg-white rounded-[8px] p-[24px] px-[28px] flex flex-col space-y-12">
         <div className="flex flex-col space-y-6 items-start">
           <h1 className="text-[24px] font-[600] leading-[28.8px]">

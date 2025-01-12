@@ -53,7 +53,7 @@ const Home = () => {
   // if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="flex flex-col space-y-10 ">
+    <div className="flex flex-col space-y-3 sm:space-y-10 ">
       <Navbar />
       <div className="flex items-start space-x-5 sm:px-12 px-3">
         <div className="flex flex-col justify-center items-center w-full xl:w-[70%] space-y-8">
